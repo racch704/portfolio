@@ -110,3 +110,28 @@ p {
   margin: .5em 0 !important;
   
 }
+
+
+
+
+
+/**** contact me ****/
+
+.contact table tr td {
+  border: none;
+}
+
+.contact table .contact-me {
+  padding-top: 0 !important;
+}
+
+  /* Targets anchor tags specifically within the .contact-me section */
+  .contact-me a {
+    text-decoration: none;
+    color: #f6f6f6; /* Change this color as needed */
+  }
+
+  /* Targets <strong> tags within anchor tags specifically within the .contact-me section */
+  .contact-me a strong {
+    color: #25c9ce; /* Change this color as needed */
+  }
