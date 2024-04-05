@@ -35,3 +35,65 @@
 .row {
   width: 100%; /* Full width */
 }
+
+
+.website p {
+  font-size: 1.2em;
+  font-family: "M PLUS 1 Code", monospace;
+  color: #f6f6f6 !important;
+  text-align: left !important;
+
+
+}
+
+.website .hero-content {
+  padding-left: 1.1em;
+}
+
+.website h3 {
+  text-align: left !important;
+  color: #ffde59; 
+  margin-top: 1.5em;
+
+}
+
+.website .custom-button {
+  margin-top: 1.5em !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cat-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+
+.cat-text h1 {
+  color: #f6f6f6 !important;
+  font-size: 1em !important;
+  font-family: "M PLUS 1 Code", monospace;
+  margin-top: 1em;
+}
+
+.cat-text .brackets {
+  font-size: 1.5em !important;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: "M PLUS 1 Code", monospace;
+  color: #f6f6f6 !important;
+  text-align: left !important;
+}

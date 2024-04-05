@@ -33,7 +33,7 @@
               </li>
               <li class="nav-item">
     
-                <a class="nav-link active" aria-current="page" href="#">_portfolio</a>
+                <a class="nav-link active" aria-current="page" href="../portfolio.html">_portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../resume.html">_resume</a>
@@ -71,29 +71,60 @@
     </div>
   </div>
 
-  <script>
-    const text = "portfolio"; // Text to display
-  
-    let charIndex = 0; // Current character index
-    const element = document.querySelector('.typewriter h1'); // Target element for typewriting effect
-  
-    function typeEffect() {
-      // Add a character
-      element.textContent += text.charAt(charIndex);
-  
-      // Move to the next character
-      charIndex++;
-  
-      // Check if we've reached the end of the text
-      if (charIndex < text.length) {
-        // If not, continue typing
-        setTimeout(typeEffect, 100); // Typing speed
-      }
-    }
-  
-    // Start the typewriter effect
-    typeEffect();
-  </script>
+
+
+
+  <div class="website">
+    <div class="container website-container">
+      <div class="row">
+        <!-- Image Column -->
+        <div class="col-lg-6">
+            <img src="../images/portfolio_branding.png" alt="website mockup" class="img-fluid">
+          </div>
+        <!-- Text Column -->
+        <div class="col-lg-6">
+          <div class="hero-content text-center">
+            <h3 class="brackets-purple">{#}</h3>
+            <h3>Who?</h3>
+            <p class="my-3 caption">
+              Splended question are a Edinburgh based cover band who play a range of music from the 70s to the 
+              present day. They preform at weddings, parties, the fringe festival, and corporate events. The band
+              consists of six members: a lead singer, a pianist, a bassist, a guitarist, a sax player, and a drummer.
+            </p>
+            <h3>Why?</h3>
+            <p class="my-3 caption">
+              They had no previous branding and wanted a logo that would reflect their vibe and 
+              appeal to their target audience and venues. They wanted a logo that was modern, professional, and could
+              be used on business cards, the kick drum cover and for use social media and marketing content. 
+            </p>
+            <h3>How?</h3>
+            <p class="my-3 caption">
+              We had a consultation to discuss their vision and target audience, as they are a function band they
+              wanted to appeal to a wide range of people and client, so we decided on a modern and clean design that
+              would be appropriate wether it was for a corporate function or in a beer garden. 
+            </p>
+          </div>
+        </div>
+
+
+            <h3>Outcome</h3>
+            <p class="my-3 caption" style="width: 50%;">
+              Since establishing their brand, they have seen an increase in
+              bookings and have been able to charge higher fees and hire additional band members.
+            </p>
+        <h3>Project Date:</h3>
+        <p class="my-3 caption">
+          June 2022</p>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col res-btn custom-button text-center">
+          <a class="btn" target="_blank" href="https://www.splendidquestion.co.uk/">{ bands site }</a>
+      </div>
+  </div>
+  </div>
+
 
 
 
@@ -133,6 +164,31 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+  
+<script>
+  const text = "portfolio"; // Text to display
+
+  let charIndex = 0; // Current character index
+  const element = document.querySelector('.typewriter h1'); // Target element for typewriting effect
+
+  function typeEffect() {
+    // Add a character
+    element.textContent += text.charAt(charIndex);
+
+    // Move to the next character
+    charIndex++;
+
+    // Check if we've reached the end of the text
+    if (charIndex < text.length) {
+      // If not, continue typing
+      setTimeout(typeEffect, 100); // Typing speed
+    }
+  }
+
+  // Start the typewriter effect
+  typeEffect();
 </script>
 
 
