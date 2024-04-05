@@ -1,0 +1,461 @@
+/********** Fonts **********/
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../fonts/Fira_Code/static/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../fonts/Fira_Code/static/FiraCode-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../fonts/Fira_Code/static/FiraCode-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/********** Base Styles **********/
+body {
+  background-color: #222121 !important;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #222121 !important;
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 1.5em;
+  max-width: 100%;
+  padding: .5em 2.5em !important;
+}
+
+.navbar-brand > img {
+  width: 25%;
+}
+
+.navbar-toggler, .navbar-toggler-icon {
+  border: none !important; /* Removes the border */
+  background-image: none; /* Removes the default background image for .navbar-toggler-icon */
+}
+
+.navbar li {
+  padding: 0 .3em;
+}
+
+.navbar-nav .nav-link {
+  color: #ffde59; 
+  padding: 0 1em;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #c1a2ff !important; 
+}
+
+.navbar-nav .nav-link.active {
+  color: #5ce1e6 !important; 
+  background-color: transparent; 
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+h1, h2 {
+  font-family: "M PLUS 1 Code", monospace;
+  color: #f6f6f6 !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffde59 !important;
+  font-size: 2em !important;
+}
+
+h2 {
+  font-size: 1.7em !important;
+}
+
+.brackets {
+  color: #c1a2ff !important;
+  font-size: 5rem !important;
+  line-height: 1; 
+}
+
+.typewriter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  font-size: 2em;
+}
+
+.typewriter h1 {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  border-right: 0.05em solid orange;
+  margin: 0;
+  letter-spacing: 0.15em;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/********** Responsive Adjustments **********/
+@media (max-width: 768px) {
+  .navbar-nav .nav-link, .navbar {
+    padding: 0 .5em, .5em 1em !important;
+  }
+
+  .hero-text {
+    margin-top: 1.5em;
+  }
+
+  h1, h2 {
+    font-size: 1.5em !important;
+  }
+
+  .brackets {
+    font-size: 3rem !important; 
+  }
+
+  .typewriter-wrapper {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .typewriter h1 {
+    font-size: 1em !important;
+  }
+
+}
+
+.hero-img {
+  width: 80% !important;
+  min-height: 70vh; /* Ensure it's at least the height of the viewport */
+  background-image: url('../images/hero_img.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image in the div */
+  background-repeat: no-repeat; /* Do not repeat the background */
+  background-attachment: fixed; /* Keep the background static when scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em; /* Add top margin if needed */
+  margin-left: auto; /* Center the div on the page horizontally */
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    width: 100% !important;
+  }
+  .text-info {
+    font-size: 1em !important;
+  }
+}
+
+.hero-img-about {
+  width: 80% !important;
+  min-height: 70vh; /* Ensure it's at least the height of the viewport */
+  background-image: url('../images/about_hero.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image in the div */
+  background-repeat: no-repeat; /* Do not repeat the background */
+  background-attachment: fixed; /* Keep the background static when scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em; /* Add top margin if needed */
+  margin-left: auto; /* Center the div on the page horizontally */
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    width: 100% !important;
+  }
+  .text-info {
+    font-size: 1em !important;
+  }
+}
+
+
+/********** Typewriter Animation **********/
+
+
+
+
+.typewriter-wrapper {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+  padding: 0 10px; /* Add some padding on the sides */
+  font-size: 2em; /* Adjust as necessary */
+}
+
+/* Responsive font size adjustments for the brackets */
+@media (max-width: 768px) {
+.brackets {
+font-size: 4rem; /* Smaller brackets on tablets and below */
+}
+.typewriter-wrapper {
+font-size: 1.5em; /* Smaller text to fit the screen */
+}
+.brackets {
+font-size: 3rem !important; 
+}
+}
+
+
+.about-me-header {
+  font-size: 3rem;
+  font-family: monospace;
+}
+.code-style {
+  font-family: 'Fira Code', monospace;
+}
+
+/********** About Me Section **********/
+
+.about-section {
+  border-top: 1px solid #c1a2ff;
+}
+
+.brackets-yellow {
+  color: #ffde59 !important;
+
+}
+
+.brackets-purple {
+  color: #c1a2ff !important;
+}
+  
+.about-me {
+  margin-top: 7em !important;
+}
+.about-me h2 {
+  font-size: 4em !important;
+}
+
+.about-me .caption, .portfolio .caption, .skills .caption {
+  font-size: 1em !important;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .about-me-intro, .portfolio-intro {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.underline p {
+  text-decoration: underline;
+  color: #f6f6f6 !important;
+  font-weight: 500;
+  }
+
+  .further-info p {
+    font-size: 1em !important;
+    color: #ffde59 !important;
+  }
+
+
+.hero-content {
+    width: 80%;
+    text-align: center;
+}
+.hero-content p {
+    color: #f6f6f6;
+    font-size: 1.5em;
+    font-family: 'FiraCode', monospace;
+}
+.about-section {
+    padding: 4rem;
+
+}
+.about-section p {
+    font-size: 1.4em;
+    font-family: 'FiraCode', monospace;
+    padding-left: 0 3em !important;
+}
+
+div.col-md-6:nth-child(1) > p:nth-child(1) {
+  padding-right: 2em;
+  }
+  Element
+  div.col-md-6:nth-child(2) > p:nth-child(1) {
+  padding-left: 2em;
+  }
+
+  .custom-button a {
+    background-color: #25c9ce;
+    color: #fff;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+
+.custom-button a:hover {
+    background-color: #c1a2ff;
+}
+
+.custom-button a:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.custom-button a:active {
+    transform: translateY(1px); /* Add a slight downward push when clicked */
+}
+
+
+
+
+
+.portfolio h2, .skills h2 {
+  font-size: 4em !important;
+}
+
+.portfolio-intro {
+  margin-top: 5em;
+}
+
+td {
+  background-color: #222121 !important;
+}
+
+.table {
+  border: rgb(137, 136, 136) !important;
+}
+
+
+
+
+
+.table img {
+  width: auto !important;
+  height: 80vh !important; 
+  margin: 0 !important;
+}
+.table td {
+  padding: 0 !important;
+}
+
+.custom-button-2 a {
+
+  background-color: #c1a2ff;
+  font-size: 1.4em;
+  text-decoration: none;
+  padding: .5em 1em;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  margin-top: 2em;
+}
+
+.custom-button-2 a:hover {
+  background-color: #25c9ce;
+  color: #fff;
+}
+
+.custom-button-2 a:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.custom-button-2 a:active {
+  transform: translateY(1px); /* Add a slight downward push when clicked */
+}
+
+
+table {
+  width: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-collapse: collapse;
+}
+
+
+
+
+
+.skills {
+  margin-top: 15em !important;
+
+}
+.skills img {
+  display: block; /* Images are inline by default, this changes it to block-level */
+  max-width: 100%; /* Adjust this percentage to make the image smaller */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  margin: 0 auto; /* This will center the image in the parent container */
+}
+.res-btn {
+  margin-top: 5em !important;
+  margin-bottom: 13em !important;
+}
+
+
+
+
+footer {
+  background-color: #222121 !important;
+  color: #f6f6f6 !important;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: "M PLUS 1 Code", monospace;
+}
+
+footer a {
+  color: #ffde59 !important;
+}
+footer a:hover {
+  color: #c1a2ff !important;
+}
+footer .active a {
+  color: #5ce1e6 !important;
+  background-color: transparent !important;
+}
+
+footer .text-right {
+  color: #ffde59;
+}
+
+footer a  {
+  color: #ffde59 !important;
+}
+
+footer a i {
+  color: #c1a2ff !important;
+  font-size: 2em !important;
+}
+footer a i:hover {
+  color: #ffde59 !important;
+  font-size: 2em !important;
+}
+
+

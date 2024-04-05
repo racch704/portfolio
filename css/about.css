@@ -1,0 +1,39 @@
+
+/**** about me page ****/
+
+.about-me table {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-collapse: collapse;
+  }
+  
+  .about-me h3 {
+    font-size: 2em !important;
+  }
+  
+  .about-me table .section {
+    padding: 3.5em !important;
+  }
+  
+  .about-me h3 {
+    font-size: 2em !important;
+    padding-bottom: .4em !important;
+  
+  }
+  
+  .about-me h2 {
+    font-size: 2em !important;
+    color: #fff !important;
+    padding-bottom: .4em;
+  }
+  
+  .about-me p {
+    font-size: 1.5em !important;
+    color: #ffde59 !important;
+    font-family: "M PLUS 1 Code", monospace;
+  }
+  
+  
+  
+  
